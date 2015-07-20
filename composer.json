@@ -22,5 +22,5 @@
     "config": {
         "bin-dir": "bin"
     },
-    "bin": ["bin/spark", "bin/spark.php"],
+    "bin": ["bin/spark"]
 }
