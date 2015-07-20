@@ -1,0 +1,26 @@
+{
+    "name": "mcamuzat/spark",
+    "description": "histogram in command line. Clone of holman/spark",
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "squizlabs/php_codesniffer": "2.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marc Camuzat",
+            "email": "marc.camuzat@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-0": {
+            "Spark": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "bin": ["bin/spark", "bin/spark.php"],
+}

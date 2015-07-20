@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
+
+use Spark\Spark;
+
+$iDontCare =array_shift($argv);
+if (count($argv) == 0) {
+    $str = '';
+    while (!feof(STDIN)) {
+        $str .= fgets(STDIN);
+    }
+    echo Spark::spark(array_filter(explode("\n", $str),'strlen'));
+    return 0;
+}
+echo Spark::spark($argv);
+
+return 0;
